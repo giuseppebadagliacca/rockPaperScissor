@@ -8,38 +8,39 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
- <header class="page-container">
+ <header>
    <ul>
-     <li><a href="http://www.google.com">Home</a></li>
+     <li><a href="#">Home</a></li>
      <li><a href="#">About</a></li>
      <li><a href="#">Contact</a></li>
    </ul>
  </header>
-<div class="page-container">
-  <h1 id="title">Rock! Paper! Scissor!</h1>
-</div>
- <div class="page-container"><div id="score-board">Scoreboard</div>
-  <table class="page-container">
-    <thead>
-      <tr>
-        <th>Player</th>
-        <th>Computer</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th id = 'player-score'>0</th>
-        <th id = 'comp-score'>0</th>
-      </tr>
-    </tbody>
-  </table>
- </div>
- <div id="game-container" class="page-container">
-   <div id="instructions" class="page-container">Make Your Move!</div>
-  <img id = 'rock' src="/img/rock.jpeg" alt="rock">
-  <img id = 'paper' src="/img/paper.jpeg" alt="paper">
-  <img id = 'scissor' src="/img/scissor.png" alt="scissor">
- </div>
+ <section>
+   <div id="table">
+      <h1 id="title">Rock! Paper! Scissor!</h1>
+    <div id="score-board">Scoreboard</div>
+    <table>
+      <thead>
+        <tr id="players-head">
+          <th>Player</th>
+          <th>Computer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th id = 'player-score'>0</th>
+          <th id = 'comp-score'>0</th>
+        </tr>
+      </tbody>
+    </table>
+   </div>
+   <div id="game-container">
+     <div id="instructions">AND SHOOT!</div>
+    <img id = 'rock' src="/img/rock.jpeg" alt="rock">
+    <img id = 'paper' src="/img/paper.jpeg" alt="paper">
+    <img id = 'scissor' src="/img/scissor.png" alt="scissor">
+   </div>
+ </section>
 </body>
 <script src="/app.js"></script>
 </html>
