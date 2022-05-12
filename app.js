@@ -24,33 +24,34 @@ function runGame(e){
     displayTie(`Both players picked ${playerChoice} ...It'a tie :/`)
   }else if(playerChoice === 'rock' && compChoice === 'paper'){
     displayChoiceRed(playerChoice)
-    playerChoiceDisplay(compChoice)
+    displayChoiceGreen(compChoice)
     addPointComp(`Paper beats Rock...Computer wins :(`)
   }
   else if(playerChoice === 'rock' && compChoice === 'scissor'){
     displayChoiceRed(compChoice)
-    playerChoiceDisplay(playerChoice)
+    displayChoiceGreen(playerChoice)
     addPointPlayer(`Rock beats Scissor...Player wins!`)
   }else if(playerChoice === 'paper' && compChoice === 'rock'){
     displayChoiceRed(compChoice)
-    playerChoiceDisplay(playerChoice)
+    displayChoiceGreen(playerChoice)
     addPointPlayer(`Paper beats Rock...Player wins!`)
   } else if(playerChoice === 'paper' && compChoice === 'scissor'){
     displayChoiceRed(playerChoice)
-    playerChoiceDisplay(compChoice)
+    displayChoiceGreen(compChoice)
     addPointComp(`Scissor beats Paper...Computer wins :(`)
   } else if(playerChoice === 'scissor' && compChoice === 'rock'){
     displayChoiceRed(playerChoice)
-    playerChoiceDisplay(compChoice)
+    displayChoiceGreen(compChoice)
     addPointComp(`Rock Beats Scissor...Computer wins :(`)
   }else if(playerChoice === 'scissor' && compChoice === 'paper'){
     displayChoiceRed(compChoice)
-    playerChoiceDisplay(playerChoice)
+    displayChoiceGreen(playerChoice)
     addPointPlayer(`Scissor beats Paper...Player wins!`)
   }
 }
 
 function displayTie(msg){
+  gameContainer.removeEventListener('click', runGame)
   const compDisp = document.createElement('div')
   compDisp.id = 'tie'
   compDisp.appendChild(document.createTextNode(msg))
@@ -58,23 +59,25 @@ function displayTie(msg){
   clearStatus('tie')
 }
 
-function addPointComp(x){
+function addPointComp(msg){
+ gameContainer.removeEventListener('click', runGame)
  const newScore = compScore + 1
  document.getElementById('comp-score').innerHTML = `${newScore}`
  const compDisp = document.createElement('div')
  compDisp.id = 'lose'
- compDisp.appendChild(document.createTextNode(`${x}`))
+ compDisp.appendChild(document.createTextNode(`${msg}`))
  scoreBoard.appendChild(compDisp)
  clearStatus('lose')
  return compScore = newScore
 }
 
-function addPointPlayer(x){
+function addPointPlayer(msg){
+  gameContainer.removeEventListener('click', runGame)
   const newScore = playerScore + 1
   document.getElementById('player-score').innerHTML = `${newScore}`
   const compDisp = document.createElement('div')
  compDisp.id = 'win'
- compDisp.appendChild(document.createTextNode(`${x}`))
+ compDisp.appendChild(document.createTextNode(`${msg}`))
  scoreBoard.appendChild(compDisp)
  clearStatus('win')
  return playerScore = newScore
@@ -84,6 +87,7 @@ function clearStatus(status){
   const element = document.querySelector(`#${status}`)
   setTimeout((status)=>{
     element.remove()
+    gameContainer.addEventListener('click', runGame)
   }, 4000)
 }
 
@@ -93,7 +97,7 @@ newChoice.id = 'redBorder'
 clearImgBorder(choice, newChoice)
 }
 
-function playerChoiceDisplay(choice){
+function displayChoiceGreen(choice){
   newChoice = document.querySelector(`img#${choice}`)
   newChoice.id = 'greenBorder'
   clearImgBorder(choice, newChoice)
