@@ -59,21 +59,20 @@ th{
   padding: 10px;
 }
 
-#instructions{
-  border: none;
-  font-size: 2rem;
-}
-
 img{
   height: 150px;
   padding: 10px;
   margin: 10px;
   border-radius: 20px;
 }
-img:hover{
+img:hover, #greenBorder{
   background: #40826d68;
   border: .5px solid #40826D;
   border-radius: 20px;
+}
+#redBorder{
+  border: rgba(120, 6, 6, 0.649);
+  background: rgba(229, 122, 122, 0.944);
 }
 img:active{
   background: #40826D;
@@ -86,11 +85,18 @@ img:active{
   align-items: center;
   justify-content: center;
 }
-#tie{
+#tie, #lose{
   color: rgba(120, 6, 6, 0.649);
   background-color: rgba(229, 122, 122, 0.944);
   padding: 10px;
   margin: 20px 0;
   border-radius: 10px;
-
+}
+#win{
+  color: rgba(120, 6, 6, 0.649);
+  background: #40826d68;
+  color: #40826D;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 10px;
 }
