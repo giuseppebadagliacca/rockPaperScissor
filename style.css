@@ -1,3 +1,229 @@
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: palegoldenrod;
+    color: #40826D;
+    border-style: border-box;
+    font-size: 15px;
+  }
+  
+  header{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  header ul li{
+    display: inline;
+    /* margin: 0px 40px; */
+  }
+  
+  header ul li a{
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  header ul li a:hover{
+    border-radius: 10%;
+    background: #40826d3d;
+  }
+  
+  #title{
+     font-size: 15px;
+     background: #40826d68;
+     border-radius: 20px;
+  }
+  section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* height: 95.75vh; */
+  }
+  
+  #score-board{
+    font-size: 1.75rem;
+  }
+  
+  th{
+    font-size: 2em;
+    padding: 10px;
+  }
+  
+  #players-head th{
+    border-bottom: solid 3px;
+    border-right: solid 1px;
+    border-left: solid 1px;
+    /* padding: 10px; */
+  }
+  
+  img{
+    height: 75px;
+    padding: 10px;
+    margin: 0px 0;
+    border-radius: 20px;
+  }
+  img:hover, #greenBorder{
+    background: #40826d68;
+    border: .5px solid #40826D;
+    border-radius: 20px;
+  }
+  #redBorder{
+    border: rgba(120, 6, 6, 0.649);
+    background: rgba(229, 122, 122, 0.944);
+  }
+  img:active{
+    background: #40826D;
+  }
+  
+  #title, #score-board, #instructions, #table{
+    padding: 25px 0;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #tie, #lose{
+    color: rgba(120, 6, 6, 0.649);
+    background-color: rgba(229, 122, 122, 0.944);
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  #win{
+    color: rgba(120, 6, 6, 0.649);
+    background: #40826d68;
+    color: #40826D;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 390px) {
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: palegoldenrod;
+    color: #40826D;
+    border-style: border-box;
+    font-size: 15px;
+  }
+  
+  header{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  header ul li{
+    display: inline;
+    /* margin: 0px 40px; */
+  }
+  
+  header ul li a{
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  header ul li a:hover{
+    border-radius: 10%;
+    background: #40826d3d;
+  }
+  
+  #title{
+     font-size: 15px;
+     background: #40826d68;
+     border-radius: 20px;
+  }
+  section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* height: 95.75vh; */
+  }
+  
+  #score-board{
+    font-size: 1.75rem;
+  }
+  
+  th{
+    font-size: 2em;
+    padding: 10px;
+  }
+  
+  #players-head th{
+    border-bottom: solid 3px;
+    border-right: solid 1px;
+    border-left: solid 1px;
+    /* padding: 10px; */
+  }
+  
+  img{
+    height: 75px;
+    padding: 10px;
+    margin: 0px 0;
+    border-radius: 20px;
+  }
+  img:hover, #greenBorder{
+    background: #40826d68;
+    border: .5px solid #40826D;
+    border-radius: 20px;
+  }
+  #redBorder{
+    border: rgba(120, 6, 6, 0.649);
+    background: rgba(229, 122, 122, 0.944);
+  }
+  img:active{
+    background: #40826D;
+  }
+  
+  #title, #score-board, #instructions, #table{
+    padding: 25px 0;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #tie, #lose{
+    color: rgba(120, 6, 6, 0.649);
+    background-color: rgba(229, 122, 122, 0.944);
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  #win{
+    color: rgba(120, 6, 6, 0.649);
+    background: #40826d68;
+    color: #40826D;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
 *{
   font-family: Arial, Helvetica, sans-serif;
   padding: 0px;
@@ -100,4 +326,333 @@ img:active{
   padding: 10px;
   margin: 20px 0;
   border-radius: 10px;
+}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 820px) 
+and (max-device-width : 1180px) 
+and (orientation : landscape) {
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: palegoldenrod;
+    color: #40826D;
+    border-style: border-box;
+  }
+  
+  header{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  header ul li{
+    display: inline;
+    margin: 0px 40px;
+  }
+  
+  header ul li a{
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  header ul li a:hover{
+    border-radius: 10%;
+    background: #40826d3d;
+  }
+  
+  #title{
+     font-size: 20px;
+     background: #40826d68;
+     border-radius: 20px;
+  }
+  section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 95.75vh;
+  }
+  
+  #score-board{
+    font-size: 1.75rem;
+  }
+  
+  th{
+    font-size: 3em;
+    padding: 10px;
+  }
+  
+  #players-head th{
+    border-bottom: solid 3px;
+    border-right: solid 1px;
+    border-left: solid 1px;
+    padding: 10px;
+  }
+  
+  img{
+    height: 120px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  img:hover, #greenBorder{
+    background: #40826d68;
+    border: .5px solid #40826D;
+    border-radius: 20px;
+  }
+  #redBorder{
+    border: rgba(120, 6, 6, 0.649);
+    background: rgba(229, 122, 122, 0.944);
+  }
+  img:active{
+    background: #40826D;
+  }
+  
+  #title, #score-board, #instructions, #table{
+    padding: 25px 0;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #tie, #lose{
+    color: rgba(120, 6, 6, 0.649);
+    background-color: rgba(229, 122, 122, 0.944);
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  #win{
+    color: rgba(120, 6, 6, 0.649);
+    background: #40826d68;
+    color: #40826D;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: palegoldenrod;
+    color: #40826D;
+    border-style: border-box;
+  }
+  
+  header{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  header ul li{
+    display: inline;
+    margin: 0px 40px;
+  }
+  
+  header ul li a{
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  header ul li a:hover{
+    border-radius: 10%;
+    background: #40826d3d;
+  }
+  
+  #title{
+     font-size: 50px;
+     padding: 0 20px;
+     background: #40826d68;
+     border-radius: 20px;
+  }
+  section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 95.75vh;
+  }
+  
+  #score-board{
+    font-size: 1.75rem;
+  }
+  
+  th{
+    font-size: 3em;
+    padding: 10px;
+  }
+  
+  #players-head th{
+    border-bottom: solid 3px;
+    border-right: solid 1px;
+    border-left: solid 1px;
+    padding: 10px;
+  }
+  
+  img{
+    height: 150px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  img:hover, #greenBorder{
+    background: #40826d68;
+    border: .5px solid #40826D;
+    border-radius: 20px;
+  }
+  #redBorder{
+    border: rgba(120, 6, 6, 0.649);
+    background: rgba(229, 122, 122, 0.944);
+  }
+  img:active{
+    background: #40826D;
+  }
+  
+  #title, #score-board, #instructions, #table{
+    padding: 25px 0;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #tie, #lose{
+    color: rgba(120, 6, 6, 0.649);
+    background-color: rgba(229, 122, 122, 0.944);
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  #win{
+    color: rgba(120, 6, 6, 0.649);
+    background: #40826d68;
+    color: #40826D;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+}
+
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 500px) {
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: palegoldenrod;
+    color: #40826D;
+    border-style: border-box;
+  }
+  
+  header{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  header ul li{
+    display: inline;
+    margin: 0px 40px;
+  }
+  
+  header ul li a{
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  header ul li a:hover{
+    border-radius: 10%;
+    background: #40826d3d;
+  }
+  
+  #title{
+     font-size: 50px;
+     padding: 0 20px;
+     background: #40826d68;
+     border-radius: 20px;
+  }
+  section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 95.75vh;
+  }
+  
+  #score-board{
+    font-size: 1.75rem;
+  }
+  
+  th{
+    font-size: 3em;
+    padding: 10px;
+  }
+  
+  #players-head th{
+    border-bottom: solid 3px;
+    border-right: solid 1px;
+    border-left: solid 1px;
+    padding: 10px;
+  }
+  
+  img{
+    height: 150px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  img:hover, #greenBorder{
+    background: #40826d68;
+    border: .5px solid #40826D;
+    border-radius: 20px;
+  }
+  #redBorder{
+    border: rgba(120, 6, 6, 0.649);
+    background: rgba(229, 122, 122, 0.944);
+  }
+  img:active{
+    background: #40826D;
+  }
+  
+  #title, #score-board, #instructions, #table{
+    padding: 25px 0;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #tie, #lose{
+    color: rgba(120, 6, 6, 0.649);
+    background-color: rgba(229, 122, 122, 0.944);
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  #win{
+    color: rgba(120, 6, 6, 0.649);
+    background: #40826d68;
+    color: #40826D;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
 }
